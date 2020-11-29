@@ -1,0 +1,5 @@
+body { padding: 75px; background-color: #1e1f3f; }
+.jumbotron { color: rgb(2 10 19); background-color: rgb(112 96 144); }
+.navbar-reverse { background: rgb(15 36 57); }
+.navbar-reverse .navbar-nav > li > a { color: white; background: rgb(35 48 62); }
+.navbar-reverse .navbar-brand { color: #efeeee; }
