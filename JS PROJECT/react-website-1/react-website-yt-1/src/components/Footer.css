@@ -125,9 +125,9 @@ transition: 0.3s  ease-out;
         width: 100%;
     }
     .footer-link-wrapper{
-        flex-direction: column;
+        flex-direction: row;
     }
     .social-media-wrap{
-        flex-direction: column;
+        flex-direction: row-reverse;
     }
 }
