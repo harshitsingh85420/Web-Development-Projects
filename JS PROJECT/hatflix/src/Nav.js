@@ -4,16 +4,16 @@ function Nav() {
     const [show, handleShow] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.scroll > 100) {
+            if (window.scrollY > 100) {
                 handleShow(true);
             } else handleShow(false);
         });
-        return () => {
+        return () =>
             window.removeEventListener("scroll");
-        };
     }, []);
+    console.log(show);
     return (
-        <div className={`nav${show && "nav__black"} `}>
+        <div className={`nav ${show && "nav__black"}`}>
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" className="nav__logo" />
             <img src="data:image/jpeg;base64,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" alt="Netflix Logo" className="nav__avatar" />
 
